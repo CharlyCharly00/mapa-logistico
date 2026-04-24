@@ -18,7 +18,7 @@ st.title("Mapa logístico con filtros")
 @st.cache_data
 def load_data():
     sharepoint_url = (
-        https://teams.wal-mart.com/:x:/r/sites/ICO0008UpdateBI/Documentos%20compartidos/DashboardMOM/Points_map.csv?d=we32b0f27a3e242fba186b6537d6e1177&csf=1&download1,
+        "https://teams.wal-mart.com/:x:/r/sites/ICO0008UpdateBI/Documentos%20compartidos/DashboardMOM/Points_map.csv?d=we32b0f27a3e242fba186b6537d6e1177&csf=1&download=1",
     )
 
     df.columns = df.columns.str.strip()

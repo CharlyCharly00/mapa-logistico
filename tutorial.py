@@ -17,9 +17,8 @@ st.title("Mapa logístico con filtros")
 # ===============================
 @st.cache_data
 def load_data():
-    df = pd.read_csv(
-        r"C:/Users/ico0008/Downloads/_SELECT_ORDER_ID_STORE_NUMBER_bu_nm_CUST_START_TIME_LATITUDE_DRI_202604221658.csv",
-        low_memory=False
+    sharepoint_url = (
+        https://teams.wal-mart.com/:x:/r/sites/ICO0008UpdateBI/Documentos%20compartidos/DashboardMOM/Points_map.csv?d=we32b0f27a3e242fba186b6537d6e1177&csf=1&download1,
     )
 
     df.columns = df.columns.str.strip()

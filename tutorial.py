@@ -1,33 +1,3 @@
-import pyautogui, os, webbrowser
-import pandas as pd
-
-#Run in PowerShell
-#
-#cd "C:\Users\ico0008\OneDrive - Walmart Inc\Python"
-#.\.venv\Scripts\Activate.ps1
-#
-#python -m pip install streamlit
-
-#python -m streamlit run tutorial.py
-
-
-
-#import random
-
-# Función para mover el cursor a una posición aleatoria
-#def mover_cursor():
-#    screen_width, screen_height = pyautogui.size()
-#    x = random.randint(0, screen_width)
-#    y = random.randint(0, screen_height)
-#    pyautogui.moveTo(x, y, duration=0.5)
-
-# Intervalo de tiempo en segundos entre cada movimiento
-#intervalo = 30
-
-#while True:
-#    mover_cursor()
-#    time.sleep(intervalo)
-
 import streamlit as st
 import pandas as pd
 import pydeck as pdk

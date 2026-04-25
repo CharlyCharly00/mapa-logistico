@@ -36,7 +36,7 @@ def load_data():
 
     return df
 
-df = load_data()
+    df = load_data()
 
 st.write(f"Registros totales: {len(df):,}")
 

@@ -25,7 +25,7 @@ def load_data():
     
 df = pd.read_csv(sharepoint_url, low_memory=False)
 
-    df.columns = df.columns.str.strip()
+df.columns = df.columns.str.strip()
 
     df["CUST_START_TIME"] = pd.to_datetime(df["CUST_START_TIME"])
 

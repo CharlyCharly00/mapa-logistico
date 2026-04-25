@@ -36,7 +36,14 @@ def load_data():
 
     return df
 
+    
+try:
     df = load_data()
+except Exception as e:
+    st.error("Error al cargar los datos desde SharePoint")
+    st.exception(e)
+    st.stop()
+
 
 st.write(f"Registros totales: {len(df):,}")
 

@@ -15,13 +15,16 @@ st.title("Mapa logístico con filtros")
 # ===============================
 # CARGA DE DATOS
 # ===============================
+
 @st.cache_data
 def load_data():
     sharepoint_url = (
-        "https://teams.wal-mart.com/:x:/r/sites/ICO0008UpdateBI/Documentos%20compartidos/DashboardMOM/Points_map.csv?d=we32b0f27a3e242fba186b6537d6e1177&csf=1&download=1",
+        "https://teams.wal-mart.com/:x:/r/sites/ICO0008UpdateBI/"
+        "Documentos%20compartidos/DashboardMOM/Points_map.csv"
+        "?d=we32b0f27a3e242fba186b6537d6e1177&csf=1&download=1"
     )
 
-    df = pd.read_csv(sharepoint_url, low_memory_False)
+    df = pd.read_csv(sharepoint_url, low_memory=False)
 
     df.columns = df.columns.str.strip()
 

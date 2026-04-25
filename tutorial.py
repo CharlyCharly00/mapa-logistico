@@ -24,14 +24,17 @@ def load_data():
 
     
     df = pd.read_csv(sharepoint_url, low_memory=False)
+
     df.columns = df.columns.str.strip()
+
     df["CUST_START_TIME"] = pd.to_datetime(df["CUST_START_TIME"])
+
     df["LATITUDE_DRIVER"] = pd.to_numeric(df["LATITUDE_DRIVER"], errors="coerce")
     df["LONGITUDE_DRIVER"] = pd.to_numeric(df["LONGITUDE_DRIVER"], errors="coerce")
+
     df = df.dropna(subset=["LATITUDE_DRIVER", "LONGITUDE_DRIVER"])
 
     return df
-
 
 df = load_data()
 

@@ -21,6 +21,8 @@ def load_data():
         "https://teams.wal-mart.com/:x:/r/sites/ICO0008UpdateBI/Documentos%20compartidos/DashboardMOM/Points_map.csv?d=we32b0f27a3e242fba186b6537d6e1177&csf=1&download=1",
     )
 
+    df = pd.read_csv(sharepoint_url, low_memory_False)
+
     df.columns = df.columns.str.strip()
 
     df["CUST_START_TIME"] = pd.to_datetime(df["CUST_START_TIME"])
